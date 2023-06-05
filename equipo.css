@@ -1,0 +1,142 @@
+body {
+    background-color: salmon;
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+  }
+  .container{
+    max-width: 1400px;
+    margin: auto;
+  }
+  
+  header{
+    background-color: salmon;
+  }
+  
+  header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.6em;
+    
+  }
+  
+  
+  header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  
+  header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+  
+  header a:hover{
+    color: black;
+  }  
+  
+
+  footer{
+    background-color: rgb(230, 230, 230);
+  }
+
+  footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+  }
+  
+  footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  @media (min-width: 720px) {
+
+    header .container{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    header nav{
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 30px;
+
+    }
+  }
+  .whatsapp {
+    width: 15%;
+    height: auto;
+    font-size: 8%;
+    line-height: 15%;
+  }
+
+
+
+
+  .whatsapp {
+    width: 12%;
+    height: auto;
+    font-size: 6%;
+    line-height: 12%;
+  }
+
+
+
+
+
+.whatsapp {
+  width: 8%;
+  height: auto;
+  font-size: 5%;
+  line-height: 8%;
+}
+
+
+
+.whatsapp {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color: #25D366;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp:hover {
+  background-color: #128C7E;
+}
+
+.whatsapp i {
+  font-size: 24px;
+}

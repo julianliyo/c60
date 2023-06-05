@@ -1,0 +1,455 @@
+*{
+  box-sizing: border-box;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+button{
+
+  font-size: 1.0em;
+  font-weight: bold;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(39, 39, 39);
+  box-shadow: 2px 2px 10px rgba(39, 39, 39);
+  color: #ffffff;
+  background-color: rgb(0, 255, 115);
+}
+button:hover{
+  background-color: rgb(0, 104, 47);
+}
+  
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
+header{
+  background-color: rgb(230, 230, 230)
+}
+
+header .logo{
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: black;
+  font-size: 1.6em;
+  
+}
+
+
+header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a{
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover{
+  color: black;
+}
+  
+ #hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(auto.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+ }
+ 
+ #hero h1{
+  color: white;
+  font-style: initial;
+ }
+
+#hero button{
+  font-size: 1.75em;
+}
+
+  #infopag .container{
+    text-align: center;
+    padding: 200px 12px;
+  }
+
+  #podio{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+  }
+
+  #podio .container {
+padding: 100px 0px;
+  }
+  
+  #podio p{
+    display: flex;
+  }
+  
+  #podio h2{
+    margin-top: 0;
+    font-size: 3.2em;
+  }
+  #podio .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 100px;
+    margin: 20px;
+    border-radius: 15px;
+  }
+
+  .carta:first-child{
+    background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    )
+    ,url(achu.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .carta:nth-child(2){
+    background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    )
+    ,url(hamil.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+
+  .carta:nth-child(3){
+    background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    )
+    ,url(fa.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #contacto .container{
+    text-align: center;
+    padding: 250px 12px;
+  }
+
+  #contacto li{
+    margin: 16px 0px;
+    font-weight: bold;
+  }
+
+  #contactate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+  }
+
+#contactate h2{
+  font-size: 9vw;
+}
+
+  #contactate button{
+    font-size: 5vw;
+  }
+
+  footer{
+    background-color: rgb(230, 230, 230);
+  }
+
+  footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+  }
+
+  footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  @media (min-width: 720px){
+
+    header{
+      position: fixed;
+      width: 100%;
+    }
+
+    header .container{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    header nav{
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 30px;
+
+    }
+
+    #hero h1{
+      font-size: 3em;
+    }
+
+  
+  #infopag .container{
+    display: flex;
+    justify-content: center;
+  }
+
+  #infopag .img-container{
+    background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    )
+    ,url(ve.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+
+  }
+  #infopag .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+#infopag h2{
+  margin-top: 0;
+}
+
+
+#podio .programa{
+  display: flex;
+  justify-content: center;
+}
+
+#podio p{
+  display: block;
+  margin-bottom: 30px;
+}
+
+
+#podio h3{
+  margin-top: 0;
+}
+
+#podio .carta{
+  padding: 50px;
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  background-position-y: 1;
+  background-color: rgba(50,50,50,0.5);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+.carta:first-child{
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(achu.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.carta:nth-child(2){
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(hamil.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.carta:nth-child(3){
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(fa.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+#contacto{
+background-image: url(co.jpg);
+background-repeat: no-repeat;
+background-size: 400px 300px;
+background-position: calc(130vw - 600px);
+}
+
+#contacto .container{
+  text-align: initial;
+}
+
+#contacto ul{
+  margin-left: 100px;
+}
+
+#contactate h2{
+  font-size: 5em;
+}
+
+#contactate button {
+  font-size: 2em;
+}
+
+footer .container{
+  justify-content: center;
+}
+
+}
+@media (min-width: 1100px) {
+  #contacto{
+    background-position-x: calc(100vw - 530px);
+  }
+}
+
+
+  .whatsapp {
+    width: 15%;
+    height: auto;
+    font-size: 8%;
+    line-height: 15%;
+  }
+
+
+
+
+  .whatsapp {
+    width: 12%;
+    height: auto;
+    font-size: 6%;
+    line-height: 12%;
+  }
+
+
+
+
+
+.whatsapp {
+  width: 8%;
+  height: auto;
+  font-size: 5%;
+  line-height: 8%;
+}
+
+
+
+.whatsapp {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color: #25D366;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp:hover {
+  background-color: #128C7E;
+}
+
+.whatsapp i {
+  font-size: 24px;
+}
+
+
+
+
+.carta:first-child{
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(achu.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.carta:nth-child(2){
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(hamil.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.carta:nth-child(3){
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(fa.jpg);
+  background-position: center center;
+  background-size: cover;
+
+}
+
